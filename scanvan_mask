@@ -1,0 +1,18 @@
+
+#!/bin/bash
+SRC=$1 # folder of images to be blurred
+MASK=$2 # folder of corresponding masks
+DST=$3 # folder to store the blurred images
+
+mkdir -p $DST
+
+for img in $SRC/*.bmp;
+    do echo img;
+    name1=${img%*.bmp};
+    name=${name1##*/};
+    echo $name;
+    echo $img;
+
+    /home/descombe/Sources/image-suite/bin/image-missing-pixel -s $SRC/$name.bmp -m $MASK/$name-mask.png -e $DST/$name.png -k 16;
+done
+
