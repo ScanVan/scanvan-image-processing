@@ -67,7 +67,7 @@ The *DST* folder has to be created before starting the blurring process.
 
 For aesthetical reasons, a slight blur is applied on all the images to cover the camera and car roof.
 
-![gaussian_blur](./img/gaussian_blur_car_mask.png)
+![gaussian_blur](./img/20200224-134957-886957-gaussian-blur.png)
 
 *Left : mask covering the motionless car roof and camera, right : image with gaussian blur.*
 
